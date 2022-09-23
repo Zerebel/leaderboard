@@ -5,6 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
+    <link rel="stylesheet" href="styles/css/output.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="md:w-9/12 m-auto text-center">
+      <header class="flex justify-center my-8 text-2xl md:text-3xl text-center">
+        30 Days Of Javascript Challenge Leaderboard
+      </header>
+      <div
+        class="inline-grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-center items-center mx-2 md:m-auto"
+        id="input-div"
+      >
+        <input
+          type="text"
+          name=""
+          id="f-Name"
+          class="outline outline-1 outline-purple-300 text-lg px-1"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          name=""
+          id="l-Name"
+          class="outline outline-1 outline-purple-300 text-lg px-1"
+          placeholder="Last Name"
+        />
+        <input
+          type="text"
+          name=""
+          id="country"
+          class="outline outline-1 outline-purple-300 text-lg px-1"
+          placeholder=" Country"
+        />
+        <input
+          type="text"
+          name=""
+          id="score"
+          class="outline outline-1 outline-purple-300 text-lg px-1"
+          placeholder="Player Score"
+        />
+        <button
+          class="bg-pink-300 col-end-3 col-start-1 md:col-start-2 md:col-end-4 lg:col-auto text-slate-600 outline outline-purple-400"
+          id="addPlayer"
+        >
+          Add Player
+        </button>
+      </div>
+      <!--* Error  -->
+      <span class="text-lg mt-4 text-red-600" id="error-message"></span>
+      <div id="records" class="mt-4 mx-1 md:mx-0 flex flex-col gap-2">
+        <div
+          class="bg-pink-400 p-2 grid grid-cols-3 justify-between items-center"
+        >
+          <span
+            class="flex flex-col uppercase md:text-lg col-span-1 break-words"
+            >First Name
+            <span class="text-sm text-slate-500">Jan 30,2020 01:09</span></span
+          >
+          <span class="">Country</span>
+          <span class="">Scr</span>
+          <div class="inline-flex gap-2 col-end-6">
+            <div
+              class="bg-white h-6 w-6 md:h-8 md:w-8 rounded-full flex justify-center items-center"
+            >
+              <button class="text-sm">
+                <img src="img/delete.svg" alt="delete" />
+              </button>
+            </div>
+            <div
+              class="bg-white h-6 w-6 md:h-8 md:w-8 text-sm md:text-lg rounded-full flex justify-center items-center"
+            >
+              <button>+5</button>
+            </div>
+            <div
+              class="bg-white h-6 w-6 md:h-8 md:w-8 text-sm md:text-lg rounded-full flex justify-center items-center"
+            >
+              <button>-5</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
 </html>
